@@ -1,6 +1,6 @@
 # User input game
 answer = input("Would you like to play game? : (yes/no) ").lower().strip()
-
+# game starts
 if answer == "yes":
     answer = input("You have four way road which side would you like to go left right or stright: ").lower().strip()
     if answer == "left":
