@@ -1,0 +1,7 @@
+{
+  "cat" : "feline",
+  "dog" : "canine",
+  "rat" : "murine",
+  "foo" : "fighter",
+  "bar" : [1,2,3,4]
+}

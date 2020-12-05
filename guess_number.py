@@ -1,6 +1,8 @@
 # Import random module
 import random
 
+
+
 # Random number Variable
 randomNumber = random.randrange(1, 50)
 
