@@ -13,7 +13,6 @@ class WebScraping:
         self.driver_path = webdriver.Chrome(executable_path=driverPath)
         self.driver_path.get(link)
         self.mediumPara = self.driver_path.find_elements_by_tag_name('p')
-        self.x = []
         for obj in self.mediumPara:
             innerData = obj.get_attribute('innerHTML')
             print(innerData)
@@ -21,6 +20,7 @@ class WebScraping:
             self.f = open('temp2.txt', 'x')
             self.f.write(innerData)
             print(self.f.close())
+            sleep(5)
 
 
 WebScraping(mediumUrl)

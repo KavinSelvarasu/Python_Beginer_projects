@@ -1,6 +1,6 @@
 import tweepy as tp
 from tweepy.auth import OAuthHandler
-import time
+from time import *
 
 # variables....
 consumerKey = "n0hiTaJkhUAFyycYQDy6wzUzO"
@@ -31,7 +31,7 @@ def reTweet():
     for tweet in tp.Cursor(api.search, q=hasTag).items(no_of_tweets):
         try:
             tweet.retweet()
-            time.sleep(10)
+            sleep(10)
         except tp.TweepError as e:
             print(e.reason)
         except StopIteration:
